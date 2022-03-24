@@ -11,9 +11,6 @@
     <main>
         <h2>Main Content for the page</h2>
     </main>
-    
-    <footer>
-        <h2>Page Footer</h2>
-    </footer>
+    <?php include('footer.php'); ?>
 </body>
 </html>
