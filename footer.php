@@ -1,3 +1,3 @@
 <footer>
-        <h2>Page Footer</h2>
+    <h2>Page Footer</h2>
 </footer>
