@@ -10,6 +10,10 @@
     <?php include('header.php'); ?>
     <main>
         <h2>Main Content for the page</h2>
-        </main>
+    </main>
+    
+    <footer>
+        <h2>Page Footer</h2>
+    </footer>
 </body>
 </html>
