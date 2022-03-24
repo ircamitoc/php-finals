@@ -8,5 +8,8 @@
 </head>
 <body>
     <?php include('header.php'); ?>
+    <main>
+        <h2>Main Content for the page</h2>
+        </main>
 </body>
 </html>
