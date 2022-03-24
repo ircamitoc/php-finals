@@ -12,6 +12,7 @@
     <ul class="list">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
+        <li><a href="#">Schedule</a></li>
         <li><a href="#">Terms</a></li>
         <li><a href="#">Privacy Policy</a></li>
     </ul>
