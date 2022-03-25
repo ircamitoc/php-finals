@@ -23,6 +23,8 @@ nav {
   background: #3D405B;
   height: 80px;
   width: 100%;
+  position: fixed;
+  top: 0;
 }
 
 label.logo {
@@ -123,6 +125,8 @@ a.active, a:hover {
 .footer {
   padding: 40px 0;
   background-color: #3D405B;
+  position: fixed;
+  bottom: 0;
 }
 
 .footer .social {
@@ -217,11 +221,23 @@ a.active, a:hover {
 }
 
 form .user-details .input-box {
+  margin: 20px 0 12px 0;
   width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
 }
 
 .user-details .input-box input {
   height: 45px;
   width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
 }
 /* REGISTRATION END */
