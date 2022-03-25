@@ -7,7 +7,7 @@
     </label>
     <label class="logo">Ice Skating <i class="fa-solid fa-person-skating"></i></label>
     <ul>
-        <li><a class="active" href="#">Home</a></li>
+        <li><a class="active" href="index.php">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Schedule</a>
         <li><a href="reg_form.php">Reservation</a></li>
