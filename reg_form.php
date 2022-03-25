@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/017ae98281.js" crossorigin="anonymous"></script>
     <link href="test_style.css" rel="stylesheet">
     <title>Reservation</title>
@@ -14,77 +13,81 @@
 
 <body>
     <?php include('header.php'); ?>
-    <div class="container">
-        <div class="title">Online Reservation</div>
-        <form action="#">
-            <div class="user-details">
-                <!-- FIRST NAME -->
-                <div class="input-box">
-                    <span class="details">First Name</span>
-                    <input type="text" placeholder="Enter First Name" required>
+    <div class="hero vh-100 d-flex align-items-center" id="home">
+        <div class="container">
+            <div class="title">Online Reservation</div>
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">First Name</span>
+                        <input type="text" placeholder="Enter First Name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Last Name</span>
+                        <input type="text" placeholder="Enter Last Name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        <input type="text" placeholder="Enter Number" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Date</span>
+                        <input type="date" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Time</span>
+                        <input type="time" required>
+                    </div>
                 </div>
-                <!-- LAST NAME -->
-                <div class="input-box">
-                    <span class="details">Last Name</span>
-                    <input type="text" placeholder="Enter Last Name" required>
+                <div class="pb-details">
+                    <span class="pb-title">Rent a polar bear?</span>
+                    <div class="category">
+                        <label for="">
+                            <span class="dot one"></span>
+                            <span class="polar-bear">Yes</span>
+                        </label>
+                        <label for="">
+                            <span class="dot one"></span>
+                            <span class="polar-bear">No</span>
+                        </label>
+                    </div>
                 </div>
-                <!-- EMAIL ADDRESS -->
-                <div class="input-box">
-                    <span class="details">Email</span>
-                    <input type="email" placeholder="Email Address" required>
+                <div class="coach-details">
+                    <span class="coach-title">Get an assistant coach?</span>
+                    <div class="category">
+                        <label for="">
+                            <span class="dot one"></span>
+                            <span class="asst-coach">Yes</span>
+                        </label>
+                        <label for="">
+                            <span class="dot one"></span>
+                            <span class="asst-coach">No</span>
+                        </label>
+                    </div>
                 </div>
-                <!-- PHONE NUMBER -->
-                <div class="input-box">
-                    <span class="details">Contact Number</span>
-                    <input type="text" placeholder="Enter Contact Number" required>
+                <div class="locker-details">
+                    <span class="locker-title">Rent a locker?</span>
+                    <div class="category">
+                        <label for="">
+                            <span class="dot one"></span>
+                            <span class="locker">Yes</span>
+                        </label>
+                        <label for="">
+                            <span class="dot one"></span>
+                            <span class="locker">No</span>
+                        </label>
+                    </div>
                 </div>
-                <!-- DATE -->
-                <div class="input-box">
-                    <span class="details">Date</span>
-                    <input type="date" required>
+                <div class="button">
+                    <input type="submit" value="Book Now">
                 </div>
-                <!-- TIME -->
-                <div class="input-box">
-                    <span class="details">Time</span>
-                    <input type="time" required>
-                </div>
-            </div> <!-- END OF USER-DETAILS -->
-            <!-- POLAR BEAR -->
-            <div class="pb-details">
-                <input type="radio" name="polar" id="dot-1">
-                <input type="radio" name="polar" id="dot-2">
-                <span class="pb-rent-title">Polar Bear</span>
-                <div class="category">
-                    <label for="dot-1">
-                        <span class="dot one"></span>
-                        <span class="polar-bear">Yes</span>
-                    </label>
-                    <label for="dot-2">
-                        <span class="dot two"></span>
-                        <span class="polar-bear">No</span>
-                    </label>
-                </div>
-            </div>
-            <div class="coach-details">
-                <input type="radio" name="coach" id="dot-3">
-                <input type="radio" name="coach" id="dot-4">
-                <span class="coach-rent-title">Assistant Coach</span>
-                <div class="category">
-                    <label for="dot-3">
-                        <span class="dot three"></span>
-                        <span class="asst-coach">Yes</span>
-                    </label>
-                    <label for="dot-4">
-                        <span class="dot four"></span>
-                        <span class="asst-coach">No</span>
-                    </label>
-                </div>
-            </div>
-            <div class="button">
-                <input type="submit" value="Book Now">
-            </div>
-        </form>
-    </div> <!-- END OF CONTAINER -->
+            </form>
+        </div>
+    </div>
     <?php include('footer.php'); ?>
 </body>
 
