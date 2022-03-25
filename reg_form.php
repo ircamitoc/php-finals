@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <title>Reservation</title>
 </head>
-<?php include('header.php'); ?>
 
 <body>
+    <?php include('header.php'); ?>
     <div class="container">
         <div class="title">Online Reservation</div>
         <form action="#">
@@ -82,6 +82,7 @@
             </div>
         </form>
     </div> <!-- END OF CONTAINER -->
+    <?php include('footer.php'); ?>
 </body>
 
 </html>
