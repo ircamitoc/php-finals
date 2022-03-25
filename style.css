@@ -11,6 +11,10 @@
 
 body {
   font-family: 'Nunito', sans-serif;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 nav {
@@ -178,3 +182,9 @@ a.active, a:hover {
   color: white;
 }
 /* FOOTER END */
+
+/* REGISTRATION START  */
+
+
+
+/* REGISTRATION END */
