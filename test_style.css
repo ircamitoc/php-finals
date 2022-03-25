@@ -37,4 +37,96 @@ body {
     background-color: rgba(21, 20, 51, 0.8);
     z-index: -1;
 }
+
 /* LANDING PAGE END */
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+}
+
+.container .title {
+    font-size: 40px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* .container .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: #fff;
+} */
+
+.container form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #fff;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: red;
+}
+
+form .pb-details .pb-title,
+form .coach-details .coach-title,
+form .locker-details .locker-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+form .pb-details .category,
+form .coach-details .category,
+form .locker-details .category {
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+.pb-details .category label,
+.coach-details .category label,
+.locker-details .category label {
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.pb-details .category .dot,
+.coach-details .category .dot,
+.locker-details .category .dot {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+}
