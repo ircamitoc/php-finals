@@ -10,7 +10,7 @@
         <li><a class="active" href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Schedule</a>
-        <li><a href="#">Reservation</a></li>
+        <li><a href="reg_form.php">Reservation</a></li>
         <li><a href="#">Login</a></li>
     </ul>
 </nav>
