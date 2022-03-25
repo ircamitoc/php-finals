@@ -126,8 +126,6 @@ a.active, a:hover {
 .footer {
   padding: 40px 0;
   background-color: #2B4570;
-  position: fixed;
-  bottom: 0;
 }
 
 .footer .social {
