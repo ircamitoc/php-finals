@@ -16,55 +16,67 @@
             <div class="user-details">
                 <!-- FIRST NAME -->
                 <div class="input-box">
-                    <span class="details">First Name
+                    <span class="details">First Name</span>
+                    <input type="text" placeholder="Enter First Name" required>
                 </div>
-                <input type="text" placeholder="Enter First Name" required>
+                <!-- LAST NAME -->
+                <div class="input-box">
+                    <span class="details">Last Name</span>
+                    <input type="text" placeholder="Enter Last Name" required>
+                </div>
+                <!-- EMAIL ADDRESS -->
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <!-- PHONE NUMBER -->
+                <div class="input-box">
+                    <span class="details">Contact Number</span>
+                    <input type="text" placeholder="Enter Contact Number" required>
+                </div>
+                <!-- DATE -->
+                <div class="input-box">
+                    <span class="details">Date</span>
+                    <input type="date" required>
+                </div>
+                <!-- TIME -->
+                <div class="input-box">
+                    <span class="details">Time</span>
+                    <input type="time" required>
+                </div>
+            </div> <!-- END OF USER-DETAILS -->
+            <!-- POLAR BEAR -->
+            <div class="pb-details">
+                <span class="pb-rent-title">Polar Bear</span>
+                <div class="category">
+                    <label for="">
+                        <span class="dot-one"></span>
+                        <span class="polar-bear">Yes</span>
+                    </label>
+                    <label for="">
+                        <span class="dot-one"></span>
+                        <span class="polar-bear">No</span>
+                    </label>
+                </div>
             </div>
-            <!-- LAST NAME -->
-            <div class="input-box">
-                <span class="details">Last Name
+            <div class="coach-details">
+                <span class="coach-rent-title">Assistant Coach</span>
+                <div class="category">
+                    <label for="">
+                        <span class="dot-one"></span>
+                        <span class="asst-coach">Yes</span>
+                    </label>
+                    <label for="">
+                        <span class="dot-one"></span>
+                        <span class="asst-coach">No</span>
+                    </label>
+                </div>
             </div>
-            <input type="text" placeholder="Enter Last Name" required>
-    </div>
-    <!-- EMAIL ADDRESS -->
-    <div class="input-box">
-        <span class="details">Email
-    </div>
-    <input type="email" placeholder="Email Address" required>
-    </div>
-    <!-- DATE -->
-    <div class="input-box">
-        <span class="details">Date
-    </div>
-    <input type="date" required>
-    </div>
-    <!-- TIME -->
-    <div class="input-box">
-        <span class="details">Time
-    </div>
-    <input type="time" required>
-    </div>
-    </div>
-    <!-- POLAR BEAR -->
-    <div class="pb-details">
-        <span class="pb-rent-title">Polar Bear</span>
-        <div class="category">
-            <label for="">
-                <span class="dot-one"></span>
-                <span class="polar-bear">Yes</span>
-            </label>
-            <label for="">
-                <span class="dot-one"></span>
-                <span class="polar-bear">No</span>
-            </label>
-        </div>
-    </div>
-    <div class="button">
-        <input type="submit" value="Book Now">
-    </div>
-    </form>
-    </div>
+            <div class="button">
+                <input type="submit" value="Book Now">
+            </div>
+        </form>
+    </div> <!-- END OF CONTAINER -->
 </body>
-<?php include('footer.php'); ?>
 
 </html>
