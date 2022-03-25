@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="style.css">
 <script src="https://kit.fontawesome.com/017ae98281.js" crossorigin="anonymous"></script>
 
-<section class="footer">
+<footer class="sticky-footer">
     <div class="social">
         <a href="#"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-youtube"></i></a>
@@ -17,6 +17,8 @@
         <li><a href="#">Privacy Policy</a></li>
     </ul>
     <p class="copyright">
-        Ice Skating @ 2022
+        Ice Skating &copy; <script>
+            document.write(new Date().getFullYear());
+        </script>
     </p>
-</section>
+</footer>
