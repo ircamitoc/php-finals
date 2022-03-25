@@ -15,6 +15,7 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 
 nav {
@@ -184,7 +185,18 @@ a.active, a:hover {
 /* FOOTER END */
 
 /* REGISTRATION START  */
+.container {
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
 
+.container .title {
+  font-size: 25px;
+  font-weight: 500;
+}
 
 
 /* REGISTRATION END */
