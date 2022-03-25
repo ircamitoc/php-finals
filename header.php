@@ -5,7 +5,7 @@
     <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
     </label>
-    <label class="logo">Ice Skating <i class="fa-solid fa-ice-skate"></i></i></label>
+    <label class="logo">Ice Skating <i class="fa-solid fa-ice-skate"></i></label>
     <ul>
         <li><a class="active" href="#">Home</a></li>
         <li><a href="#">About</a></li>
