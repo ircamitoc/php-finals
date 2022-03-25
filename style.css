@@ -12,8 +12,9 @@
 
 body {
   display: flex;
-  height: 100vh;
-  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   padding: 10px;
   background: #A8D0DB;
@@ -123,21 +124,19 @@ a.active, a:hover {
 /* HEADER END */
 
 /* FOOTER START */
-.footer {
-  padding: 30px 0;
-  width: 100%;
+.sticky-footer {
+  position: sticky;
+  top: 100%;
   background-color: #2B4570;
-  position: fixed;
-  bottom: 0;
 }
 
-.footer .social {
+.sticky-footer .social {
   text-align: center;
   padding-bottom: 25px;
   color: white;
 }
 
-.footer .social a {
+.sticky-footer .social a {
   font-size: 24px;
   color: inherit;
   border: 1px solid #ccc;
@@ -151,11 +150,11 @@ a.active, a:hover {
   opacity: 0.75;
 }
 
-.footer .social a:hover {
+.sticky-footer .social a:hover {
   opacity: 1;
 }
 
-.footer ul {
+.sticky-footer ul {
   margin-top: 0;
   padding: 0;
   list-style: none;
@@ -165,25 +164,25 @@ a.active, a:hover {
   text-align: center;
 }
 
-.footer ul a {
+.sticky-footer ul a {
   color: inherit;
   text-decoration: none;
   opacity: 0.8;
 }
 
-.footer ul li {
+.sticky-footer ul li {
   display: inline-block;
   padding: 0 15px;
   color: white;
 }
 
-.footer ul li a:hover {
+.sticky-footer ul li a:hover {
   opacity: 1;
   padding: 7px 13px;
   border-radius: 3px;
 }
 
-.footer .copyright {
+.sticky-footer .copyright {
   margin-top: 15px;
   text-align: center;
   font-size: 13px;
@@ -283,14 +282,14 @@ form .coach-details .category {
   border: 5px solid transparent;
 }
 
-#dot-1:checked ~ .category label .one,
-#dot-2:checked ~ .category label .two {
+#dot-1:checked~.category label .one,
+#dot-2:checked~.category label .two {
   border-color: #d9d9d9;
   background: #9b59b6;
 }
 
-#dot-3:checked ~ .category label .three,
-#dot-4:checked ~ .category label .four {
+#dot-3:checked~.category label .three,
+#dot-4:checked~.category label .four {
   border-color: #d9d9d9;
   background: #9b59b6;
 }
@@ -346,4 +345,5 @@ form .button input:hover {
     width: 0;
   }
 }
+
 /* REGISTRATION END */
