@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Reservation</title>
 </head>
+<?php include('header.php'); ?>
 
 <body>
     <div class="container">
