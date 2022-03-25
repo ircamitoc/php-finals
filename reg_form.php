@@ -44,40 +44,46 @@
                     </div>
                 </div>
                 <div class="pb-details">
+                    <input type="radio" name="polar" id="dot-1">
+                    <input type="radio" name="polar" id="dot-2">
                     <span class="pb-title">Rent a polar bear?</span>
                     <div class="category">
-                        <label for="">
+                        <label for="dot-1">
                             <span class="dot one"></span>
                             <span class="polar-bear">Yes</span>
                         </label>
-                        <label for="">
-                            <span class="dot one"></span>
+                        <label for="dot-2">
+                            <span class="dot two"></span>
                             <span class="polar-bear">No</span>
                         </label>
                     </div>
                 </div>
                 <div class="coach-details">
+                    <input type="radio" name="coach" id="dot-3">
+                    <input type="radio" name="coach" id="dot-4">
                     <span class="coach-title">Get an assistant coach?</span>
                     <div class="category">
-                        <label for="">
-                            <span class="dot one"></span>
+                        <label for="dot-3">
+                            <span class="dot three"></span>
                             <span class="asst-coach">Yes</span>
                         </label>
-                        <label for="">
-                            <span class="dot one"></span>
+                        <label for="dot-4">
+                            <span class="dot four"></span>
                             <span class="asst-coach">No</span>
                         </label>
                     </div>
                 </div>
                 <div class="locker-details">
+                    <input type="radio" name="lock" id="dot-5">
+                    <input type="radio" name="lock" id="dot-6">
                     <span class="locker-title">Rent a locker?</span>
                     <div class="category">
-                        <label for="">
-                            <span class="dot one"></span>
+                        <label for="dot-5">
+                            <span class="dot five"></span>
                             <span class="locker">Yes</span>
                         </label>
-                        <label for="">
-                            <span class="dot one"></span>
+                        <label for="dot-6">
+                            <span class="dot six"></span>
                             <span class="locker">No</span>
                         </label>
                     </div>
