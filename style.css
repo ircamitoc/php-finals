@@ -196,6 +196,12 @@ a.active, a:hover {
 .container .title {
   font-size: 25px;
   font-weight: 500;
+  position: relative;
+}
+
+.container .title::before {
+  content: '';
+  position: absolute;
 }
 
 
