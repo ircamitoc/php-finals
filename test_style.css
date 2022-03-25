@@ -43,24 +43,15 @@ body {
 .container {
     max-width: 700px;
     width: 100%;
-    padding: 25px 30px;
+    padding: 25px 20px;
 }
 
 .container .title {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 500;
     color: #fff;
+    margin-top: 100px;
 }
-
-/* .container .title::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 3px;
-    width: 30px;
-    background: #fff;
-} */
 
 .container form .user-details {
     display: flex;
@@ -128,5 +119,46 @@ form .locker-details .category {
 .locker-details .category .dot {
     height: 18px;
     width: 18px;
+    background: #d9d9d9;
     border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .category .one,
+#dot-2:checked ~ .category .two,
+#dot-3:checked ~ .category .three,
+#dot-4:checked ~ .category .four,
+#dot-5:checked ~ .category .five,
+#dot-6:checked ~ .category .six {
+    border-color: #d9d9d9;
+    background: blue;
+}
+
+form input[type="radio"] {
+    display: none;
+}
+
+form .button {
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .button input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    background: black;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+form .button input:hover {
+    background:#fff;
+    color: black;
 }
