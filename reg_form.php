@@ -12,7 +12,7 @@
 
 <body>
     <div class="container">
-        <div class="title">Registration</div>
+        <div class="title">Online Reservation</div>
         <form action="#">
             <div class="user-details">
                 <!-- FIRST NAME -->
