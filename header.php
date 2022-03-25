@@ -22,9 +22,9 @@
                 </li>
             </ul>
         </div>
-        <form class="d-flex">
-            <!-- <input type="text" class="form-control me-2"> -->
+<!--         <form class="d-flex">
+            <input type="text" class="form-control me-2">
             <button type="submit" class="btn btn-outline-light">Sign Up</button>
-        </form>
+        </form> -->
     </div>
 </nav>
