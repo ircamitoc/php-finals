@@ -320,5 +320,29 @@ form .button input:hover {
   background: #E49273;
 }
 
+@media (max-width: 584px) {
+  .container {
+    margin-top: 150px;
+    max-width: 100%;
+  }
 
+  form .user-details .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  form .pb-details .category,
+  form .coach-details .category {
+    width: 60%;
+  }
+
+  .container form .user-details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+
+  .user-details::-webkit-scrollbar {
+    width: 0;
+  }
+}
 /* REGISTRATION END */
