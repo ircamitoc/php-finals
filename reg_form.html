@@ -1,5 +1,10 @@
 <?php
-    $fname = $_POST['']
+    $fname = $_POST['first-name'];
+    $lname = $_POST['last-name'];
+    $email = $_POST['email-address'];
+    $number = $_POST['phone-num'];
+    $rdate = $_POST['s-date'];
+    $rtime = $_POST['s-time'];
 ?>
 
 <!DOCTYPE html>
@@ -71,11 +76,11 @@
                     </div>
                     <div class="input-box">
                         <span class="details">Date</span>
-                        <input type="date" name="date" required>
+                        <input type="date" name="s-date" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Time</span>
-                        <input type="time" required>
+                        <input type="time" name="s-time" required>
                     </div>
                 </div>
                 <div class="btn-group dropend">
