@@ -20,6 +20,7 @@ body {
 
 .hero {
     background-image: url("https://assets1.phonebooky.com/listings/assets/000/029/684/original/int2.jpg");
+    min-height: 800px;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -89,6 +90,7 @@ form .user-details .input-box {
     border-color: red;
 }
 
+form .dropend .drop-title,
 form .pb-details .pb-title,
 form .coach-details .coach-title,
 form .locker-details .locker-title {
