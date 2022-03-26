@@ -5,6 +5,7 @@
     $number = $_POST['phone-num'];
     $rdate = $_POST['s-date'];
     $rtime = $_POST['s-time'];
+    $npeople = $_POST['numpeople'];
 ?>
 
 <!DOCTYPE html>
@@ -85,7 +86,7 @@
                 </div>
                 <div class="btn-group dropend">
                     <span class="drop-title">Number of people:&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                    <button name ="numpeople" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Select pax
                     </button>
