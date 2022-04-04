@@ -1,4 +1,4 @@
-body{
+body {
     background-image: url("https://i.ibb.co/mJ4W7F1/bg.png");
     background-color: rgba(21, 20, 51, 0.8);
     min-height: 1100px;
@@ -8,26 +8,28 @@ body{
 }
 
 
-h3{
+h3 {
     font-size: 36px;
 }
 
-small{
+small {
     font-size: 24px;
 }
 
-.wrapper .row{
+.wrapper .row {
     padding: 5px;
 }
-.wrapper .card{
+
+.wrapper .card {
     font-family: 'Inconsolata', monospace;
 }
 
-.card-footer{
+.card-footer {
     text-decoration: none;
-    color:rgb(28, 32, 85);
+    color: rgb(28, 32, 85);
     padding: px;
 }
-.card-header, .card-footer{
+
+.card-header, .card-footer {
     text-align: center;
 }
