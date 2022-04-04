@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
+
 * {
     padding: 0;
     margin: 0;
@@ -8,15 +9,33 @@
 
 body {
     font-family: 'Nunito', sans-serif;
+    background-image: url("https://i.ibb.co/mJ4W7F1/bg.png");
+    background-color: rgba(21, 20, 51, 0.8);
+    min-height: 1100px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+    height: auto;
+}
+
+h4 {
+    font-size: clamp(15px, 5vw, 24px)
 }
 
 /* LANDING PAGE START */
+.carousel-item {
+    height: 32rem;
+    background: #777;
+}
 
 .btn {
     padding: 14px 18px;
     border-width: 2px;
     border-radius: 0;
 }
+
 
 .hero {
     background-image: url("https://assets1.phonebooky.com/listings/assets/000/029/684/original/int2.jpg");
@@ -26,7 +45,10 @@ body {
     background-attachment: fixed;
     position: relative;
     z-index: 2;
+    background-repeat: repeat-y;
+    height: auto;
 }
+
 
 .hero::after {
     content: "";
@@ -36,7 +58,18 @@ body {
     top: 0;
     left: 0;
     background-color: rgba(21, 20, 51, 0.8);
+    background-repeat: repeat-y;
     z-index: -1;
+}
+
+.card {
+
+    color: rgb(218, 218, 218);
+    height: 600px;
+    max-height: 1920px;
+    background-color: rgba(38, 36, 73, 0.8);
+    background-blend-mode: color;
+    top: 0;
 }
 
 /* LANDING PAGE END */
@@ -44,7 +77,7 @@ body {
 .container {
     max-width: 700px;
     width: 100%;
-/*     padding: 25px 35px; */
+    /*     padding: 25px 35px; */
 }
 
 .container .title {
@@ -53,6 +86,15 @@ body {
     color: #fff;
     margin-top: 100px;
 }
+
+.lead {
+    color: #fff;
+}
+
+select {
+    max-width: 300px;
+}
+
 
 .container form .user-details {
     display: flex;
@@ -85,10 +127,16 @@ form .user-details .input-box {
     transition: all 0.3s ease;
 }
 
-.user-details .input-box input:focus,
-.user-details .input-box input:valid {
-    border-color: red;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
+
+.user-details .input-box input:valid {
+    border-color: rgb(68, 236, 110);
+}
+
 
 form .dropend .drop-title,
 form .pb-details .pb-title,
@@ -128,12 +176,12 @@ form .locker-details .category {
     transition: all 0.3s ease;
 }
 
-#dot-1:checked ~ .category .one,
-#dot-2:checked ~ .category .two,
-#dot-3:checked ~ .category .three,
-#dot-4:checked ~ .category .four,
-#dot-5:checked ~ .category .five,
-#dot-6:checked ~ .category .six {
+#dot1:checked~.category .one,
+#dot-2:checked~.category .two,
+#dot3:checked~.category .three,
+#dot-4:checked~.category .four,
+#dot-5:checked~.category .five,
+#dot-6:checked~.category .six {
     border-color: #d9d9d9;
     background: blue;
 }
@@ -162,6 +210,111 @@ form .button input {
 }
 
 form .button input:hover {
-    background:#fff;
+    background: #fff;
     color: black;
+}
+
+.home .carousel-item {
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.home .carousel-item:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.home .carousel-item .container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.home .carousel-item h2 {
+    font-size: 80px;
+    color: #fff;
+    margin: 0 0 10px;
+}
+
+.home .carousel-item h1 {
+    font-size: 50px;
+    color: #fff;
+    margin: 0 0 10px;
+}
+
+.home .carousel-item p {
+    font-size: 30px;
+    margin: 0;
+    color: #eeeeee;
+}
+
+.home .carousel-item.active h2 {
+    animation: fadeInLeft 0.5s ease forwards;
+}
+
+.home .carousel-item.active p {
+    animation: fadeInRight 0.5s ease forwards;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.home .carousel-controls {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    z-index: 20;
+    transform: translateX(-30%)
+}
+
+.home .carousel-indicators {
+    position: relative;
+    margin: 0;
+}
+
+.home .carousel-indicators li {
+    height: 8px;
+    width: 8px;
+    margin: 0 5px;
+    border-radius: 70%;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid transparent;
+    transition: all 0.3s linear;
+}
+
+.home .carousel-indicators li.active {
+    transform: scale(1.2);
 }
