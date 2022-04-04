@@ -1,0 +1,33 @@
+body{
+    background-image: url("https://i.ibb.co/mJ4W7F1/bg.png");
+    background-color: rgba(21, 20, 51, 0.8);
+    min-height: 1100px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+h3{
+    font-size: 36px;
+}
+
+small{
+    font-size: 24px;
+}
+
+.wrapper .row{
+    padding: 5px;
+}
+.wrapper .card{
+    font-family: 'Inconsolata', monospace;
+}
+
+.card-footer{
+    text-decoration: none;
+    color:rgb(28, 32, 85);
+    padding: px;
+}
+.card-header, .card-footer{
+    text-align: center;
+}
